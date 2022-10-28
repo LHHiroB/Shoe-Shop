@@ -30,7 +30,7 @@
 }
 html{
   font-size: 60%;
-  overflow: hidden;
+
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
 }
@@ -41,7 +41,7 @@ header{
   right: 0;
   z-index: 1000;
   background: #fff;
-  padding: 2rem 8%;
+  padding: 2rem 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,8 +50,8 @@ header{
 header .logo img{
     
   display: block;
-  max-width:150px;
-  max-height:95px;
+  max-width:40px;
+  max-height:80px;
   width: auto;
   height: auto;
 }
@@ -79,6 +79,104 @@ header .icons a{
 }
 section{
   padding: 2rem 9%;
+}
+.home{
+  padding: 0;
+  position: relative;
+}
+.home .slide-container .slide{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 9%;
+  padding-top: 9rem;
+}
+.home .slide-container .slide .content{
+  flex: 1 1 40rem;
+  animation: slideContent .3s linear 1s backwards;
+}
+@keyframes slideContent{
+  0%{
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+}
+
+.home .slide-container .slide .image{
+  flex: 1 1 50rem;
+  padding-bottom: 15rem;
+  position: relative;
+  z-index: 0;
+}
+.home .slide-container .slide .image .shoe{
+  width: 100%;
+  transform: rotate(-10deg);
+  animation: shoe .3s linear;
+}
+@keyframes slideContent{
+  0%{
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+}
+
+.home .slide-container .slide .content span{
+  font-size: 2rem;
+  color: orangered;
+}
+.home .slide-container .slide .content h3{
+  font-size: 5rem;
+  color: #000;
+}
+.home .slide-container .slide .content p{
+  font-size: 1.7rem;
+  color: #666;
+  padding: .5rem 0;
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  border: .2rem solid #000;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  padding: .8rem 3rem;
+}
+.home .slide-container{
+  display: none;
+}
+.home .slide-container.active{
+  display: block;
+}
+.home #prev,.home #next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5.5rem;
+  font-size: 2rem;
+  color: #000;
+  border:.2rem solid #000;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.home #prev:hover,.home #next:hover{
+  color: #fff;
+  background: orangered;
+}
+.home #prev{
+  left: 3rem;
+}
+.home #next{
+  right: 3rem;
 }
 
 

@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+    
         <header>
             <div id="menu-bar"><i class="uil uil-bars"></i></div>
-            <a href="index.html" class="logo"><img src="./src/image/xoaphon.png" alt=""></a>
+            <a href="index.html" class="logo"><img width = "60" height = "60" src="./src/image/xoaphon.png" alt=""></a>
             <nav class="navbar">
                 <a href="./index.html">Home</a>
                 <a href="#product">Product</a>      
@@ -25,8 +26,45 @@
                 <a href="#"><i class="uil uil-shopping-bag"></i></a>
             </div>
         </header>
-    
-    </section>
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>4H Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="./src/image/shoes5.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>4H Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="./src/image/shoes6.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div id="pref"><i class="uil uil-angle-left" onclick="prev();"></i></div>
+            <div id="next"><i class="uil uil-angle-right" onclick="next();"></i></div>
+
+        </section>
     <script src="./src/js/main.js"></script>
 </body>
 </html>
