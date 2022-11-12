@@ -6,27 +6,408 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Shop</title>
     <link rel="stylesheet" href="./src/css/main.css">
+
+    <!-- css ion  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+    
         <header>
             <div id="menu-bar"><i class="uil uil-bars"></i></div>
-            <a href="index.html" class="logo"><img src="./src/image/xoaphon.png" alt=""></a>
+            <a href="index.html" class="logo"><img width = "60" height = "60" src="./src/image/xoaphon.png" alt=""></a>
             <nav class="navbar">
                 <a href="./index.html">Home</a>
-                <a href="#product">Product</a>      
-                <a href="#blog">blog</a>
+                <a href="./index.html">Product</a>      
+                <a href="./index.html">Blog</a>
+                <a href="./index.html">Contact</a>
             </nav>
             <div class="icons">
                 <a href="#"><i class="uil uil-user-circle"></i></a>
                 <a href="#"><i class="uil uil-heart"></i></a>
-                <a href="#"><i class="uil uil-shopping-bag"></i></a>
+                <a href="./payment.html"><i class="uil uil-shopping-bag"></i></a>
             </div>
         </header>
-    
-    </section>
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>4H Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="./index.html" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="./src/image/shoes5.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>4H Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="./src/image/shoes6.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div id="pref"><i class="uil uil-angle-left" onclick="prev();"></i></div>
+            <div id="next"><i class="uil uil-angle-right" onclick="next();"></i></div>
+
+        </section>
+        <section class="product" id="product">
+            <h1 class="heading">latest <span>Products</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="./sproduct.html"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/Air Jordan 1 Low SE 3200000đ.png" alt="">
+                        <h3>Air Jordan 1 Low</h3>
+                        <div class="price">3200000đ <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/Air Jordan 1 Mid SE 3800000đ.png" alt="">
+                        <h3>Air Jordan 1 Mid</h3>
+                        <div class="price">3800000đ <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/Air Jordan 1 Zoom CMFT 4200000đ.png" alt="">
+                        <h3>Air Jordan 1 Zoom CMFT</h3>
+                        <div class="price">4200000đ <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/crater.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/blazer2.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/air2.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/air.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><i class="uil uil-heart"></i></a>
+                        <a href="#"><i class="uil uil-share"></i></a>
+                        <a href="#"><i class="uil uil-eye"></i></a>
+                    </div>
+                    <div class="content">
+                        <img src="./src/image/blazer.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span></span></div>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <section class="blog" id="blog">
+                    <h1 class="heading">Team <span>Service</span></h1>
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="./src/image/shipping.png" alt="">
+                            <h3>Free Shipping</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Eos sequi temporibus impedit corporis vero ab exercitationem 
+                                dolore voluptatibus, nisi non.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="./src/image/headphone1.jpg" alt="">
+                            <h3>Support 24/7</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Eos sequi temporibus impedit corporis vero ab exercitationem 
+                                dolore voluptatibus, nisi non.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="./src/image/qua.jpg" alt="">
+                            <h3>Member Discout</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Eos sequi temporibus impedit corporis vero ab exercitationem 
+                                dolore voluptatibus, nisi non.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="./src/image/qua.jpg" alt="">
+                            <h3>Member Discout</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Eos sequi temporibus impedit corporis vero ab exercitationem 
+                                dolore voluptatibus, nisi non.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="./src/image/qua.jpg" alt="">
+                            <h3>Member Discout</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Eos sequi temporibus impedit corporis vero ab exercitationem 
+                                dolore voluptatibus, nisi non.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="./src/image/qua.jpg" alt="">
+                            <h3>Member Discout</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Eos sequi temporibus impedit corporis vero ab exercitationem 
+                                dolore voluptatibus, nisi non.
+                            </p>
+                        </div>
+                </section>
+                <div class="gallery">
+                    <div class="galleryItem">
+                        <h1 class="galleryTitle">Be Yourself!</h1>
+                        <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="" class="galleryImg">
+                    </div>
+                    <div class="galleryItem">
+                        <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="" class="galleryImg">
+                        <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+                    </div>
+                    <div class="galleryItem">
+                        <h1 class="galleryTitle">Just Do it!</h1>
+                        <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="" class="galleryImg">
+                    </div>
+                </div>
+                <div class="newSeason">
+                    <div class="nsItem">
+                        <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="" class="nsImg">
+                    </div>
+                    <div class="nsItem">
+                        <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+                        <h1 class="nsTitle">New Season</h1>
+                        <h1 class="nsTitle">New Collection</h1>
+                        <a href="#">
+                            <button class="nsButton">CHOOSE YOUR STYLE</button>
+                        </a>
+                    </div>
+                    <div class="nsItem">
+                        <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="" class="nsImg">
+                    </div>
+                </div>
+                <!-- <section id="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get Email updates about our latest shop and <span>special offer.</span>
+                    </p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button>Sign up</button>
+                </div>
+                </section> -->
+                <section class="news" id="news">
+                    <div class="content">
+                        <h3>monthly news letter</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
+                        </p>
+                        <form action="">
+                            <input type="email" placeholder="Your email address" class="email">
+                            <input type="submit" value="Sign up" class="btn">
+                        </form>
+                    </div>
+                </section>
+                <section id="page-header">
+                    <h4>#Shoeeee</h4>
+                    <p>Save more</p>
+                </section>
+                <footer class="section-p1">
+                    <div class="col">
+                        <img class="logo" src="./src/image/LOGOc.png" alt="">
+                    <h4>Contact</h4>
+                    <p><strong>Address:</strong>UIT</p>
+                    <p><strong>Phone:</strong>+83 373352359</p>
+                    <p><strong>Hours:</strong>7:00-18:00,Mon-Sat</p>
+                        <div class="follow">
+                        <h4>Follow us</h4>
+                            <div class="icon">
+                                <a href="#"> <i class="uil uil-facebook-f"></i> </a>
+                                <a href="#"> <i class="uil uil-instagram"></i></a>
+                                <a href="#"> <i class="uil uil-twitter-alt"></i></a>
+                                <a href="#"><i class="uil uil-telegram-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4>Your Account</h4>
+                        <a href="#">Running Shoes</a> 
+                        <a href="#">Football Shoes</a>
+                        <a href="#">Basketball Shoes</a>
+                        <a href="#">Volleyball Shoes </a>
+                        <a href="#">Trainee Shoes</a>  
+                    </div>
+                    <div class="col">
+                        <h4>My Account</h4>
+                        <a href="#">Returns</a> 
+                        <a href="#">F.A.Q</a>
+                        <a href="#">Search Terms</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Shipping Policy</a> 
+                    </div>
+                    <div class="col">
+                        <h4>Quick Links</h4>
+                        <a href="#">My orders</a> 
+                        <a href="#">My credit slips</a>
+                        <a href="#">Beauty</a>
+                        <a href="#">My addresses</a>
+                        <a href="#">My personal info</a> 
+                    </div>
+                    <div class="col">
+                        <h4>Services</h4>
+                        <a href="#">Search</a> 
+                        <a href="#">About Us</a>
+                        <a href="#">Typo</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Wishlist</a> 
+                    </div>
+                    <div class="col">
+                        <h4>Happy Day</h4>
+                        <a href="#">Monday - Friday</a> 
+                        <a href="#">8a.m - 10 p.m</a>
+                        <a href="#">Saturday & Sunday</a>
+                        <a href="#">10a.m - 8 p.m</a>
+                    </div>
+                    <div class="copyright">
+                        <p>Ap shoes store © Copyright 2022. Powered by Shopify</p>
+                    </div>
+                    <div class="payment">
+                        <!-- <img src="https://cdn.shopify.com/s/files/1/1024/6277/t/3/assets/payment_2x.png?v=44509836612264500021448871053" alt="LOGOpayment" class="logopayment"width="309"height="29"> -->
+                    </div>
+                </footer>
+                
     <script src="./src/js/main.js"></script>
 </body>
 </html>
