@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Shop</title>
     <link rel="stylesheet" href="./src/css/main.css">
-
     <!-- css ion  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
-    
         <header>
             <div id="menu-bar"><i class="uil uil-bars"></i></div>
             <a href="index.html" class="logo"><img width = "60" height = "60" src="./src/image/xoaphon.png" alt=""></a>
@@ -29,45 +29,72 @@
                 <a href="./payment.html"><i class="uil uil-shopping-bag"></i></a>
             </div>
         </header>
-        <section class="home" id="home">
-            <div class="slide-container active">
-                <div class="slide">
-                    <div class="content">
-                        <span>4H Shoes</span>
-                        <h3>Nike Metcon Shoes</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
-                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
-                            sit iure neque voluptate.
-                        </p>
-                        <a href="./index.html" class="btn">add to card</a>
-                    </div>
-                    <div class="image">
-                        <img src="./src/image/shoes5.png" class="shoe">
-                    </div>
-                </div>
-            </div>
-            <div class="slide-container">
-                <div class="slide">
-                    <div class="content">
-                        <span>4H Shoes</span>
-                        <h3>Nike Metcon Shoes</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
-                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
-                            sit iure neque voluptate.
-                        </p>
-                        <a href="#" class="btn">add to card</a>
-                    </div>
-                    <div class="image">
-                        <img src="./src/image/shoes6.png" class="shoe">
-                    </div>
-                </div>
-            </div>
-            <div id="pref"><i class="uil uil-angle-left" onclick="prev();"></i></div>
-            <div id="next"><i class="uil uil-angle-right" onclick="next();"></i></div>
 
+        
+        <section class="home" id="home">
+            <div class="home-slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Image 1 -->
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>4H Shoes</span>
+                            <h3>Nike Metcon Shoes</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                                Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                                sit iure neque voluptate.
+                            </p>
+                            <a href="#" class="btn">add to card</a>
+                        </div>   
+                        <div class="image">
+                            <img src="./src/image/imgslide2.png" class="shoe">
+                        </div>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>4H Shoes</span>
+                            <h3>Nike Metcon Shoes</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                                Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                                sit iure neque voluptate.
+                            </p>
+                            <a href="#" class="btn">add to card</a>
+                        </div>
+                        <div class="image">
+                            <img src="./src/image/imgslide1.png" class="shoe">
+                        </div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>4H Shoes</span>
+                            <h3>Nike Metcon Shoes</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                                Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                                sit iure neque voluptate.
+                            </p>
+                            <a href="#" class="btn">add to card</a>
+                        </div>
+                        <div class="image">
+                            <img src="./src/image/shoes5.png" class="shoe">
+                        </div>
+                    </div>
+
+            
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+    
         </section>
+
+
+
         <section class="product" id="product">
             <h1 class="heading">latest <span>Products</span></h1>
             <div class="box-container">
@@ -307,7 +334,7 @@
                         <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
                         <h1 class="nsTitle">New Season</h1>
                         <h1 class="nsTitle">New Collection</h1>
-                        <a href="#">
+                        <a href="">
                             <button class="nsButton">CHOOSE YOUR STYLE</button>
                         </a>
                     </div>
@@ -316,7 +343,9 @@
                             alt="" class="nsImg">
                     </div>
                 </div>
-                <!-- <section id="newsletter">
+
+                
+                <section id="newsletter">
                 <div class="newstext">
                     <h4>Sign Up For Newsletters</h4>
                     <p>Get Email updates about our latest shop and <span>special offer.</span>
@@ -326,7 +355,9 @@
                     <input type="text" placeholder="Your email address">
                     <button>Sign up</button>
                 </div>
-                </section> -->
+                </section>
+
+
                 <section class="news" id="news">
                     <div class="content">
                         <h3>monthly news letter</h3>
@@ -340,74 +371,99 @@
                         </form>
                     </div>
                 </section>
+
+
                 <section id="page-header">
                     <h4>#Shoeeee</h4>
                     <p>Save more</p>
                 </section>
-                <footer class="section-p1">
-                    <div class="col">
-                        <img class="logo" src="./src/image/LOGOc.png" alt="">
-                    <h4>Contact</h4>
-                    <p><strong>Address:</strong>UIT</p>
-                    <p><strong>Phone:</strong>+83 373352359</p>
-                    <p><strong>Hours:</strong>7:00-18:00,Mon-Sat</p>
-                        <div class="follow">
-                        <h4>Follow us</h4>
-                            <div class="icon">
-                                <a href="#"> <i class="uil uil-facebook-f"></i> </a>
-                                <a href="#"> <i class="uil uil-instagram"></i></a>
-                                <a href="#"> <i class="uil uil-twitter-alt"></i></a>
-                                <a href="#"><i class="uil uil-telegram-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h4>Your Account</h4>
-                        <a href="#">Running Shoes</a> 
-                        <a href="#">Football Shoes</a>
-                        <a href="#">Basketball Shoes</a>
-                        <a href="#">Volleyball Shoes </a>
-                        <a href="#">Trainee Shoes</a>  
-                    </div>
-                    <div class="col">
-                        <h4>My Account</h4>
-                        <a href="#">Returns</a> 
-                        <a href="#">F.A.Q</a>
-                        <a href="#">Search Terms</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Shipping Policy</a> 
-                    </div>
-                    <div class="col">
-                        <h4>Quick Links</h4>
-                        <a href="#">My orders</a> 
-                        <a href="#">My credit slips</a>
-                        <a href="#">Beauty</a>
-                        <a href="#">My addresses</a>
-                        <a href="#">My personal info</a> 
-                    </div>
-                    <div class="col">
-                        <h4>Services</h4>
-                        <a href="#">Search</a> 
-                        <a href="#">About Us</a>
-                        <a href="#">Typo</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Wishlist</a> 
-                    </div>
-                    <div class="col">
-                        <h4>Happy Day</h4>
-                        <a href="#">Monday - Friday</a> 
-                        <a href="#">8a.m - 10 p.m</a>
-                        <a href="#">Saturday & Sunday</a>
-                        <a href="#">10a.m - 8 p.m</a>
-                    </div>
-                    <div class="copyright">
-                        <p>Ap shoes store © Copyright 2022. Powered by Shopify</p>
-                    </div>
-                    <div class="payment">
-                        <!-- <img src="https://cdn.shopify.com/s/files/1/1024/6277/t/3/assets/payment_2x.png?v=44509836612264500021448871053" alt="LOGOpayment" class="logopayment"width="309"height="29"> -->
-                    </div>
-                </footer>
+
+
+            
+        </section> 
+        
+        
+        <footer class="section-p1">
+            <div class="col">
+                <h4>Your Account</h4>
+                <a href="#">Running Shoes</a> 
+                <a href="#">Football Shoes</a>
+                <a href="#">Basketball Shoes</a>
+                <a href="#">Volleyball Shoes </a>
+                <a href="#">Trainee Shoes</a>  
+            </div>
+            <div class="col">
+                <h4>Your Account</h4>
+                <a href="#">Running Shoes</a> 
+                <a href="#">Football Shoes</a>
+                <a href="#">Basketball Shoes</a>
+                <a href="#">Volleyball Shoes </a>
+                <a href="#">Trainee Shoes</a>  
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Returns</a> 
+                <a href="#">F.A.Q</a>
+                <a href="#">Search Terms</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping Policy</a> 
+            </div>
+            <div class="col">
+                <h4>Quick Links</h4>
+                <a href="#">My orders</a> 
+                <a href="#">My credit slips</a>
+                <a href="#">Beauty</a>
+                <a href="#">My addresses</a>
+                <a href="#">My personal info</a> 
+            </div>
+            <div class="col">
+                <h4>Services</h4>
+                <a href="#">Search</a> 
+                <a href="#">About Us</a>
+                <a href="#">Typo</a>
+                <a href="#">Blog</a>
+                <a href="#">Wishlist</a> 
+            </div>
+            <div class="col">
+                <h4>Happy Day</h4>
+                <a href="#">Monday - Friday</a> 
+                <a href="#">8a.m - 10 p.m</a>
+                <a href="#">Saturday & Sunday</a>
+                <a href="#">10a.m - 8 p.m</a>
+            </div>
+            <div class="payment">
+                <img src="https://cdn.shopify.com/s/files/1/1024/6277/t/3/assets/payment_2x.png?v=44509836612264500021448871053" alt="LOGOpayment" class="logopayment"width="309"height="29"> 
+            </div>
+            <div class="copyright">
+                <p>© Copyright 2022 4SHOES</p>
+            </div>
+            
+        </footer>
                 
     <script src="./src/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop:true,
+        });
+      </script>
 </body>
 </html>
