@@ -225,10 +225,10 @@ section{
   left: 1rem;
 }
 .product .box-container .box .icons a{
-  height: 4.5rem;
-  width: 5rem;
-  line-height: 4.5rem;
-  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
   color: #000;
   border: .1rem solid #000;
   border-radius: .5rem;
@@ -251,11 +251,11 @@ section{
 }
 .product .box-container .box .content h3{
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .product .box-container .box .content .price{
   color: #000;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   padding: 1rem 0;
 }

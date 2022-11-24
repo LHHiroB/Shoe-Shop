@@ -253,7 +253,7 @@ section{
   }
   .product .box-container .box .content h3{
     color: #000;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
   .product .box-container .box .content .price{
     color: #000;
@@ -346,6 +346,9 @@ section{
   width: 309;
   height: 29;
   }
+.single-pro-details li{
+  font-size: 17px;
+}
 @media (max-width:768px){
     #menu-bar{
         display: block;
